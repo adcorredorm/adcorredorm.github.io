@@ -12,7 +12,7 @@ notes: TODO, add multiarrow image
                 <img src="{{ "/images/" | append: page.featured_image | prepend: site.baseurl }}" alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}{{ page.title }}{% endif %}">
             </div><!-- .post-thumbnail -->
             {% endif %}
-            <div class="entry-box">
+            <div id="tag-list" class="entry-box">
                 <header class="entry-header">
                     <h1 class="entry-title">{{page.title}}</h1>
                 </header><!-- .entry-header -->
@@ -35,7 +35,7 @@ notes: TODO, add multiarrow image
                         {% endfor %}
                     </ul>
                     {% endfor %}
-                    <p><a href="#page" class="archive-top-link">Return to top <i class="fa fa-angle-up" aria-hidden="true"></i></a></p>
+                    <p><a href="#tag-list" class="archive-top-link">Volver al inicio <i class="fa fa-angle-up" aria-hidden="true"></i></a></p>
                 </div><!-- .entry-content -->
             </div><!-- .entry-box -->
         </article><!-- .post -->
