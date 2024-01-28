@@ -33,16 +33,16 @@ navigation:
   url: /
 - text: About
   url: /about/
-- text: Style Guide
-  url: /style-guide/
-- text: Archives
+#- text: Style Guide
+#  url: /style-guide/
+- text: Archivo
   url: /tags/
 
 # Author information - author info at the bottom of the post
-author_name: "John Doe"
-author_bio: "My name is John Doe. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 6 years."
+author_name: "Angel Corredor"
+author_bio: "Ingeniero y programador de profesión, viajero apasionado y aprendiz eterno."
 author_url: "https://justgoodthemes.com"
-author_location: "Vilnius, Lithuania"
+author_location: "Somewhere in the world"
 author_image: authorimage.jpg
 
 # Footer ad banner
@@ -50,7 +50,7 @@ banner_image: banner.jpg
 banner_url: https://justgoodthemes.com/
 
 # Footer newsletter widget - add your form action url for MailChimp signup form here
-mailchimp_url: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
+mailchimp_url: # TODO: "//justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117"
 
 # Social links in the site footer
 twitter_username: 
