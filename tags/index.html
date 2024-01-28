@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Post Archives
+title: Archivo
+featured_image: aboutPage.jpg
+notes: TODO, add multiarrow image
 ---
 <main class="content fade-in-down delay-0_75s">
     <div class="inner">
@@ -23,14 +25,17 @@ title: Post Archives
                         {% endfor %}
                     </div><!-- .archive-tags-list -->
                     {% for tag in sortedTags %}
-                    <h2 id="{{ tag | cgi_escape }}">{{ tag }}</h2>
+                    <div id="{{ tag | cgi_escape }}">
+                        <p style="display: inline-flex;">  </p>
+                    </div>
+                    <h2>{{ tag }}</h2>
                     <ul class="archive-posts-list">
                         {% for post in site.tags[tag] %}
                         <li><a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">{{ post.title }}</a> <span class="archive-meta"> — <time class="published" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time></span></li>
                         {% endfor %}
                     </ul>
-                    <p><a href="#page" class="archive-top-link">Return to top <i class="fa fa-angle-up" aria-hidden="true"></i></a></p>
                     {% endfor %}
+                    <p><a href="#page" class="archive-top-link">Return to top <i class="fa fa-angle-up" aria-hidden="true"></i></a></p>
                 </div><!-- .entry-content -->
             </div><!-- .entry-box -->
         </article><!-- .post -->
